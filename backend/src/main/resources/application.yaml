@@ -1,0 +1,18 @@
+server:
+  port: 8443
+  ssl:
+    key-store-type: PEM
+    key-store: classpath:ssl/cert.pem
+    key-store-password: ""
+    key-store-provider: SUN
+    enabled: true
+    
+  # For development - allow CORS
+  cors:
+    allowed-origins: "https://localhost:3000"
+    allowed-methods: "*"
+    allowed-headers: "*"
+
+spring:
+  application:
+    name: backend
